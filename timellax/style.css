@@ -1,0 +1,658 @@
+/*
+Theme Name: Terry Southern
+Theme URI: http://reddirtcollective.com/
+Description: The 2011 default theme for Terry Southern
+Author: Mike Newell
+Author URI: http://iwearshorts.com/
+Version: 1.0
+Tags: Parallax, parallax
+
+License: No license, in the spirit of Terry Southern, feel free to copy and modify.
+License URI: http://reddirtcollective.com
+
+Terry was all about sharing. He was all about open society and we think if he were alive today, he would be all about open source. So feel free to take what you want from this, credit would be nice but isnt necessary.
+*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+/*    overflow: hidden;*/
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+    background-image: url(images/bg2.jpg);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-position: top left;
+/*    height: 700px;*/
+/*    overflow: hidden;*/
+/*    height: 100%;*/
+}
+#parallax {
+    background-image: url(images/midground2.png);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+/*    background-position: 0 -150px;*/
+/*    padding: 5em 0;*/
+    height: 700px;
+/*    height: 100%;*/
+/*    margin-top: -150px;*/
+/*    width: 5000px;*/
+}
+* html #parallax {
+    /* because IE6 can't do transparent PNGs for backgrounds */
+    background: url(images/midground2.png) scroll repeat-x;
+/*    height: 100%;*/
+}
+ 
+#wrap {
+    width: 36000px;
+/*    height: 700px;*/
+    min-height: 100%;
+/*    overflow: hidden;*/
+}
+
+/*html, #wrap {
+    height: 100%;
+}*/
+ 
+/*#content {
+    padding: 20px;
+    z-index: 999;
+    background: black;
+    -moz-opacity:0.5;
+    opacity: 0.5;
+    color: white;
+    -moz-border-radius: 250px;
+    border-radius: 250px;
+    width: 350px;
+    height: 260px;
+    top: 50%;
+    margin-top: -150px;
+    position: fixed;
+    left: 50%;
+    margin-left: -150px;
+    padding-top: 90px;
+    text-align: center;
+}*/
+ 
+/*
+    GENTEST
+*/
+/*.mover {
+    z-index: 998;
+    background: greenyellow;
+    color: white;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    position: absolute;
+    text-align: center;
+}*/
+
+.mover {
+    z-index: 998;
+    background: url(images/photo-bg.jpg) scroll repeat #E6E6E6;
+    color: dimgrey;
+    padding: 20px;
+    margin-top: 40px;
+/*    -moz-border-radius: 100px;*/
+/*    border-radius: 100px;*/
+    position: absolute;
+    text-align: center;
+/*    border: 20px solid white;*/
+    -moz-box-shadow: 1px 1px 10px black;
+    -webkit-box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px black;
+/*    width: 300px;*/
+    
+}
+
+.mover article {
+/*    -moz-box-shadow:inset 0 0 10px #000000;
+    -webkit-box-shadow:inset 0 0 10px #000000;
+    box-shadow:inset 0 0 10px #000000;*/
+/*    margin-top: -15px;*/
+    width: 100%;
+    height: 100%;
+/*    background-color: white;*/
+}
+
+pre {
+    background-color: white;
+}
+
+/* article styles */
+
+.text {
+    padding: 20px;
+    min-width: 300px;
+}
+
+.thumbnail {
+    background-color: black;
+/*    padding-top: 15px;*/
+/*    margin-top: 0;*/
+    
+}
+
+.media {
+/*    border: 20px solid black;*/
+    color: white;
+    background-color: #333333;
+    padding-top: 15px;
+    
+}
+
+.cutout {
+/*    border: none;*/
+    background-color: transparent;
+}
+
+/* tooltip styling. by default the element to be styled is .tooltip  */
+.tooltip {
+	display:none;
+	background:transparent url(images/black_arrow.png) scroll no-repeat;
+	font-size:12px;
+	height:70px;
+	width:160px;
+	padding:25px;
+	color:#fff;
+        margin-top: -15px;
+}
+
+/* style the trigger elements */
+article img {
+	border: 1px solid #ccc;
+	cursor:pointer;
+	margin:0 8px;
+        padding: 3px;
+}
+
+/* Navigation */
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    background: url(images/about.png) scroll no-repeat;
+    width: 176px;
+    height: 44px;
+    text-indent: -9999px;
+    text-decoration: none;
+    float: left;
+}
+
+nav a:hover {
+    background: url(images/about-hover.png) scroll no-repeat;
+}
+
+nav a:active {
+    position: relative;
+    top: 1px;
+}
+
+nav #counter {
+    display: block;
+    background: url(images/button.png) scroll no-repeat;
+    width: 176px;
+    height: 44px;
+    color: white;
+    font-family: Courier, Arial, Futura;
+    float: right;
+/*    text-indent: -9999px;*/
+/*    text-decoration: none;*/
+    padding: 5px 55px;
+    font-size: 28px;
+}
+
+/* fancy box */
+
+#fancybox-content {
+    background: url(images/page-bg.jpg) scroll repeat black;
+    color: white;
+    padding: 50px;
+}
+
+#fancybox-content h1 {
+    margin: 0 auto;
+    padding: 20px 50px;
+    width: 300px;
+}
+
+#fancybox-content article {
+    margin: 0 auto;
+    padding: 20px 20px;
+    width: 85%;
+    text-align: left;
+}
+
+#fancybox-content a {
+    color: steelblue;
+    text-decoration: none;
+}
+
+#fancybox-content a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Style Specific Elements on Timeline */
+
+.element-130 {
+	left: 182px;
+	top: 119px;
+/* 	border: 5px solid red; */
+}
+
+.element-87 {
+	left: 2577px;
+	top: 40px;
+}
+
+.element-84 {
+	left: 7900px;
+	top: 120px;
+}
+
+.element-109 {
+	left: 8317px;
+	top: 40px;
+}
+
+.element-132 {
+	left: 9042px;
+	top: 181px;
+}
+
+.element-114 {
+	left: 9180px;
+	top: 21px;
+}
+
+.element-94 {
+	left: 9600px;
+	top: 200px;
+}
+
+.element-119 {
+	left: 10636px;
+	top: 302px;
+}
+
+.element-102 {
+	left: 9990px;
+	top: 20px;
+}
+
+.element-116 {
+	left: 10345px;
+	top: 181px;
+}
+
+.element-121 {
+	left: 10853px;
+	top: 164px;
+}
+
+.element-105 {
+	left: 10688px;
+	top: 41px;
+}
+
+.element-99 {
+	left: 11116px;
+	top: 41px;
+}
+
+.element-128 {
+	left: 12062px;
+	top: 166px;
+}
+
+.element-125 {
+	left: 11914px;
+	top: 41px;
+}
+
+.element-123 {
+	left: 11911px;
+	top: 125px;
+}
+
+.element-135 {
+	left: 12912px;
+	top: 125px;
+}
+
+.element-137 {
+	left: 12988px;
+	top: 42px;
+}
+
+.element-140 {
+	left: 13296px;
+	top: 42px;
+}
+
+.element-145 {
+	left: 13177px;
+	top: 126px;
+}
+
+.element-143 {
+	left: 13304px;
+	top: 127px;
+}
+
+.element-147 {
+	left: 13721px;
+	top: 170px;
+}
+
+.element-152 {
+	left: 13979px;
+	top: 42px;
+}
+
+.element-149 {
+	left: 14000px;
+	top: 42px;
+}
+
+.element-155 {
+	left: 13979px;
+	top: 42px;
+}
+
+.element-158 {
+	left: 14422px;
+	top: 43px;
+}
+
+.element-169 {
+	left: 14984px;
+	top: 43px;
+}
+
+.element-166 {
+	left: 14826px;
+	top: 43px;
+}
+
+.element-164 {
+	left: 14834px;
+	top: 173px;
+}
+
+.element-162 {
+	left: 14960px;
+	top: 130px;
+}
+
+.element-173 {
+	left: 15788px;
+	top: 130px;
+}
+
+.element-187 {
+	left: 15630px;
+	top: 43px;
+}
+
+.element-182 {
+	left: 15820px;
+	top: 43px;
+}
+
+.element-179 {
+	left: 15655px;
+	top: 176px;
+}
+
+.element-175 {
+	left: 15653px;
+	top: 176px;
+}
+.element-194 {
+	left: 16229px;
+	top: 177px;
+}
+
+.element-192 {
+	left: 16055px;
+	top: 177px;
+}
+
+.element-190 {
+	left: 16047px;
+	top: 133px;
+}
+
+.element-185 {
+	left: 16159px;
+	top: 133px;
+}
+
+.element-196 {
+	left: 16642px;
+	top: 178px;
+}
+
+.element-206 {
+	left: 16637px;
+	top: 179px;
+}
+
+.element-204 {
+	left: 16463px;
+	top: 179px;
+}
+
+.element-201 {
+	left: 16618px;
+	top: 45px;
+}
+
+.element-198 {
+	left: 16472px;
+	top: 45px;
+}
+.element-208 {
+	left: 16878px;
+	top: 136px;
+}
+.element-210 {
+	left: 17454px;
+	top: 136px;
+}
+
+.element-213 {
+	left: 17877px;
+	top: 182px;
+}
+
+.element-222 {
+	left: 18109px;
+	top: 45px;
+}
+
+.element-219 {
+	left: 18110px;
+	top: 45px;
+}
+
+.element-216 {
+	left: 18291px;
+	top: 46px;
+}
+
+.element-228 {
+	left: 18125px;
+	top: 46px;
+}
+
+.element-225 {
+	left: 18110px;
+	top: 138px;
+}
+.element-231 {
+	left: 18716px;
+	top: 46px;
+}
+
+.element-233 {
+	left: 18550px;
+	top: 186px;
+}
+
+.element-236 {
+	left: 18947px;
+	top: 186px;
+}
+
+.element-239 {
+	left: 19119px;
+	top: 140px;
+}
+
+.element-248 {
+	left: 19787px;
+	top: 46px;
+}
+
+.element-245 {
+	left: 19958px;
+	top: 46px;
+}
+
+.element-243 {
+	left: 19929px;
+	top: 188px;
+}
+
+.element-241 {
+	left: 19812px;
+	top: 141px;
+}
+
+.element-257 {
+	left: 21043px;
+	top: 47px;
+}
+
+.element-250 {
+	left: 24061px;
+	top: 142px;
+}
+
+.element-252 {
+	left: 25339px;
+	top: 47px;
+}
+
+.element-260 {
+	left: 26417px;
+	top: 47px;
+}
+
+.element-263 {
+	left: 26399px;
+	top: 47px;
+}
+
+.element-266 {
+	left: 26967px;
+	top: 191px;
+}
+
+.element-288 {
+	left: 27238px;
+	top: 48px;
+}
+
+.element-280 {
+	left: 27242px;
+	top: 144px;
+}
+
+.element-268 {
+	left: 27211px;
+	top: 193px;
+}
+.element-270 {
+	left: 27795px;
+	top: 48px;
+}
+
+.element-274 {
+	left: 27646px;
+	top: 194px;
+}
+
+.element-276 {
+	left: 28084px;
+	top: 48px;
+}
+
+.element-282 {
+	left: 29293px;
+	top: 195px;
+}
+
+.element-286 {
+	left: 29287px;
+	top: 146px;
+}
+
+.element-284 {
+	left: 29438px;
+	top: 196px;
+}
+
+.element-291 {
+	left: 31548px;
+	top: 49px;
+}
+
+.element-294 {
+	left: 32750px;
+	top: 49px;
+}
+
+.element-297 {
+	left: 35656px;
+	top: 49px;
+}
+
+.element-301 {
+	left: 35927px;
+	top: 49px;
+}
+
+.element-334 {
+	left: 36066px;
+	top: 49px;
+}
+
+.element-306 {
+	left: 35917px;
+	top: 149px;
+}
+
+.element-304 {
+	left: 36054px;
+	top: 149px;
+}
